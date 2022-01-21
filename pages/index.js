@@ -1,7 +1,6 @@
 import { useState } from "react"
 import Header from "./Components/Header"
-import DialogModal from "./Components/Home/DialogModal"
-
+// import DialogModal from "./Components/DialogModalHome"
 export default function Home() {
   const [open, setOpen] = useState(false)
 
@@ -9,7 +8,7 @@ export default function Home() {
     <section className="h-full lg:h-screen w-screen">
       <Header/>
       <div className="h-full w-full pt-32 lg:pt-0">
-        <DialogModal open={open} setOpen={setOpen}/>
+        {/* <DialogModal open={open} setOpen={setOpen}/> */}
         <div className="relative h-full flex flex-col lg:flex-row items-center justify-center px-5 lg:px-20">
           <div className="lg:w-1/2">
             <p className='text-5xl xl:text-6xl 2xl:text-7xl font-koho-semibold text-sunrise font-koho text-third'>

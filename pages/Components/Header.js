@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 import { Menu } from '@headlessui/react'
 import { AiOutlineMenu } from 'react-icons/ai'
 
@@ -11,11 +11,31 @@ export default function Header(){
       <img src="/logo.png" alt="logoPixel" className="w-36"/>
       <nav className='hidden md:block'>
         <ul className="flex gap-5 text-white">
-          <li className="hover:underline"><a href="/">Home</a></li>
-          <li className="hover:underline"><a href="/organizacao">Organização</a></li>
-          <li className="hover:underline"><a href="/sobre">Sobre</a></li>
-          <li className="hover:underline"><a href="/conduta">Conduta</a></li>
-          <li className="hover:underline"><a href="/cronograma">Cronograma</a></li>
+          <Link href="/">
+            <a>
+              <li className="hover:underline">Home</li>
+            </a>
+          </Link>
+          <Link href="/organizacao">
+            <a>
+              <li className="hover:underline">Organização</li>
+            </a>
+          </Link>
+          <Link href="/sobre">
+            <a>
+              <li className="hover:underline">Sobre</li>
+            </a>
+          </Link>
+          <Link href="/conduta">
+            <a>
+              <li className="hover:underline">Conduta</li>
+            </a>
+          </Link>
+          <Link href="/cronograma">
+            <a>
+              <li className="hover:underline">Cronograma</li>
+            </a>
+          </Link>
        </ul>
       </nav>
 
@@ -26,52 +46,47 @@ export default function Header(){
               <div className='absolute text-white gap-2 mt-10 right-0 flex flex-col px-2 py-4 font-koho bg-third border border-t border-white' >
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      className={`${active && 'bg-blue-500'}`}
-                      href="/"
-                    >
-                      Home
-                    </a>
+                    <Link href="/">
+                      <a className={`${active && 'bg-blue-500'}`}>
+                        Home
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      className={`${active && 'bg-blue-500'}`}
-                      href="/organizacao"
-                    >
+                    <Link href="/organizacao">
+                      <a className={`${active && 'bg-blue-500'}`}>
                       Organização
-                    </a>
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      className={`${active && 'bg-blue-500'}`}
-                      href="/sobre"
-                    >
-                      Sobre
-                    </a>
+                    <Link href="/sobre">
+                      <a className={`${active && 'bg-blue-500'}`}>
+                        Sobre
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      className={`${active && 'bg-blue-500'}`}
-                      href="/conduta"
-                    >
+                    <Link href="/conduta">
+                      <a className={`${active && 'bg-blue-500'}`}>
                       Conduta
-                    </a>
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      className={`${active && 'bg-blue-500'}`}
-                      href="/cronograma"
-                    >
+                    <Link href="/cronograma">
+                      <a className={`${active && 'bg-blue-500'}`}>
                       Cronograma
-                    </a>
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
               </div>
