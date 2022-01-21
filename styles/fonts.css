@@ -1,0 +1,43 @@
+@font-face {
+  font-family: KohoBold;
+  src: url("/fonts/Koho-Bold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: KohoSemiBold;
+  src: url("/fonts/Koho-SemiBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: koho;
+  src: url("/fonts/Koho-Medium.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: kohoItalic;
+  src: url("/fonts/Koho-Italic.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: KohoExtraLight;
+  src: url("/fonts/Koho-ExtraLight.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: krub;
+  src: url("/fonts/Krub-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
