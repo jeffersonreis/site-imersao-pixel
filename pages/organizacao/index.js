@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Header from "../Components/Header"
-// import DialogModal from "./Components/DialogModal"
+import DialogModal from "./Components/DialogModal"
 
 export default function Organizacao() {
   const [open, setOpen] = useState(false)
@@ -8,7 +8,7 @@ export default function Organizacao() {
     <section className="h-full lg:h-screen w-screen">
       <Header/>
       <div className="w-full h-full pt-32 lg:pt-0">
-        {/* <DialogModal open={open} setOpen={setOpen}/> */}
+        <DialogModal open={open} setOpen={setOpen}/>
         <div className="relative h-full flex flex-col items-center justify-center px-5 lg:px-20">
           <div className="flex flex-col justify-center items-center max-w-screen-2xl">
             <h1 className="text-5xl 2xl:text-7xl text-fourth font-koho-semibold mb-20">Diretorias Executivas 21.2 e 22.1</h1>
