@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Header from "../Components/Header"
-import DialogModal from "./Components/DialogModal"
+import DialogModal from "./DialogModal"
 
 export default function Organizacao() {
   const [open, setOpen] = useState(false)
