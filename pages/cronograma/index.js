@@ -1,8 +1,16 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Header from "../Components/Header"
 
 export default function Conduta() {
   const [selected, setSelected] = useState(0)
+  const imageList = ['/crono-sexta.svg', '/crono-sabado.svg', '/crono-domingo.svg']
+
+  useEffect(() => {
+    imageList.forEach((image) => {
+      new Image().src = image
+    });
+  });
+
   return (
     <section className="h-full">
       <Header/>
@@ -16,13 +24,13 @@ export default function Conduta() {
         <div className="flex justify-center w-full mt-10 lg:mt-20 px-5 lg:px-0">
           {
             selected === 0?
-            <img src="/crono-sexta.svg" className="w-full md:w-2/3"/>
+            <img src={imageList[0]} className="w-full md:w-2/3"/>
           
             : selected === 1?
-            <img src="/crono-sabado.svg" className="w-full md:w-2/3"/>
+            <img src={imageList[1]} className="w-full md:w-2/3"/>
           
             : selected === 2?
-            <img src="/crono-domingo.svg" className="w-full md:w-2/3"/>
+            <img src={imageList[2]} className="w-full md:w-2/3"/>
           
             :''
         }
